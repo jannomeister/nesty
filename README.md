@@ -1,15 +1,14 @@
 <div align="center">
-	<h1>React Testing Library</h1>
-	  <a href="https://www.emojione.com/emoji/1f410">
-		  <img
-	    height="90"
-	    width="90"
-	    alt="goat"
-	    src="https://i.imgur.com/Fwgc8yJ.png"
-	  />
+  <a href="https://www.emojione.com/emoji/1f410">
+    <img
+    height="90"
+    width="90"
+    alt="Nesty"
+    src="https://i.imgur.com/Fwgc8yJ.png"
+  />
 	</a>
-	
-<p>A backend template using Nest.JS for my personal projects.</p>
+	<h1>Nesty</h1>
+  <p>A backend template using Nest.JS for my personal projects.</p>
 </div>
 
 ## The problem
