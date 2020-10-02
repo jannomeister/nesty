@@ -1,6 +1,6 @@
 {
   "name": "nesty",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A backend template using Nest.JS for my personal projects",
   "author": "Janno Tabamo <jannotabamo@gmail.com> (https://resume.jannomeister.com)",
   "private": false,
