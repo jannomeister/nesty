@@ -1,75 +1,46 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+<div align="center">
+  <a href="https://www.emojione.com/emoji/1f410">
+    <img
+    height="90"
+    width="90"
+    alt="Nesty"
+    src="https://i.imgur.com/Fwgc8yJ.png"
+  />
+	</a>
+	<h1>Nesty</h1>
+  <p>A backend template using Nest.JS for my personal projects.</p>
+</div>
 
-[travis-image]: https://api.travis-ci.org/nestjs/nest.svg?branch=master
-[travis-url]: https://travis-ci.org/nestjs/nest
-[linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
-[linux-url]: https://travis-ci.org/nestjs/nest
-  
-  <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/dm/@nestjs/core.svg" alt="NPM Downloads" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://api.travis-ci.org/nestjs/nest.svg?branch=master" alt="Travis" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://img.shields.io/travis/nestjs/nest/master.svg?label=linux" alt="Linux" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#5" alt="Coverage" /></a>
-<a href="https://gitter.im/nestjs/nestjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge"><img src="https://badges.gitter.im/nestjs/nestjs.svg" alt="Gitter" /></a>
-<a href="https://opencollective.com/nest#backer"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec"><img src="https://img.shields.io/badge/Donate-PayPal-dc3d53.svg"/></a>
-  <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## The problem
 
-## Description
+I develop a bunch of backend applications. Each time I scaffold a new project using Nest.js, I always recreate all the setup from my previous projects.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## The solution
 
-## Installation
+This is a backend template using Nest.JS that has all the configurations from all of my projects, from linting, code formatting, building and more.
 
-```bash
-$ npm install
-```
+## Getting Started
 
-## Running the app
+This guide will walk you through on how to use this template
 
-```bash
-# development
-$ npm run start
+- clone this repo: `git clone -b main git@github.com:jannomeister/nesty.git`
+- change the origin with the project you created: `git remote set-url origin <YOUR_NEW_PROJECT.git>`
+- push this to your newly create project.
 
-# watch mode
-$ npm run start:dev
+## Development
 
-# production mode
-$ npm run start:prod
-```
+This project already has [husky](https://github.com/typicode/husky), so that it will validate your commit messages if it passes the [commitlint guidelines](https://commitlint.js.org/), and it will also run all your tests and lint before you can push successfully.
 
-## Test
+- You can run this project via `npm run start:dev`
+- You can build this project via `npm run build`
+- You can ran all the unit tests via `npm run test` or `npm run test:watch`
+- You can run all the e2e tests via `npm run test:e2e`
+- You can ran test coverage via `npm run test:cov`
 
-```bash
-# unit tests
-$ npm run test
+## Contribute
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-  Nest is [MIT licensed](LICENSE).
+- fork this repo
+- clone your forked repository in your local
+- apply your changes
+- commit your changes and push it to your forked repo
+- make a pull request to the original repo
