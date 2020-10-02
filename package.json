@@ -5,6 +5,11 @@
   "author": "Janno Tabamo <jannotabamo@gmail.com> (https://resume.jannomeister.com)",
   "private": true,
   "license": "MIT",
+  "engines": {
+    "node": ">=10.18",
+    "npm": ">=6",
+    "yarn": ">=1"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -71,5 +76,13 @@
     },
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  }
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/jannomeister/nesty"
+  },
+  "bugs": {
+      "url": "https://github.com/jannomeister/nesty/issues"
+  },
+  "homepage": "https://github.com/jannomeister/nesty#readme"
 }
