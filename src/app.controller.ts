@@ -7,7 +7,7 @@ export class AppController {
   }
 
   @Get()
-  @Redirect("api-docs")
+  @Redirect(process.env.SWAGGER_ENDPOINT)
   init(): boolean {
     return true;
   }
