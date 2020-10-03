@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { NestFactory } from "@nestjs/core";
 import { AppModule } from "./app.module";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
@@ -7,8 +8,13 @@ import * as rateLimit from "express-rate-limit";
 
 const initCors = () => {
   const validateOrigin = (origin, next) => {
-    // TODO: handle different environments
-    next(null, true);
+    if (process.env.NODE_ENV === "production") {
+      next(null, true);
+    } else if (process.env.NODE_ENV === "staging") {
+      next(null, true);
+    } else {
+      next(null, true);
+    }
   };
 
   return { origin: validateOrigin, credentials: true };
@@ -22,13 +28,13 @@ const initHelmet = () => {
 
 const initSwagger = app => {
   const options = new DocumentBuilder()
-    .setTitle("API Docs")
+    .setTitle(process.env.SWAGGER_TITLE)
     .setVersion("0.0.1")
-    .setDescription("These are all the available APIs")
+    .setDescription(process.env.SWAGGER_DESCRIPTION)
     .build();
 
   const document = SwaggerModule.createDocument(app, options);
-  SwaggerModule.setup("api-docs", app, document);
+  SwaggerModule.setup(process.env.SWAGGER_ENDPOINT, app, document);
 };
 
 async function bootstrap() {
@@ -46,6 +52,6 @@ async function bootstrap() {
 
   initSwagger(app);
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
