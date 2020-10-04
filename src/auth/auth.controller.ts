@@ -29,6 +29,7 @@ export class AuthController {
   @ApiResponse({ status: 200, type: RegisterResponseDto })
   @ApiResponse({ status: 400 })
   async register(@Body() data: RegisterDto): Promise<RegisterResponseDto> {
-    return await this.authService.register(data);
+    await this.authService.register(data);
+    return {};
   }
 }
