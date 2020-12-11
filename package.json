@@ -1,6 +1,6 @@
 {
   "name": "nesty",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "A backend template using Nest.JS for my personal projects",
   "author": "Janno Tabamo <jannotabamo@gmail.com> (https://resume.jannomeister.com)",
   "private": false,
@@ -23,7 +23,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "version": "auto-changelog -p"
   },
   "dependencies": {
     "@nestjs/common": "^7.6.1",
