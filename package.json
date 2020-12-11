@@ -13,7 +13,7 @@
   "scripts": {
     "build": "rimraf dist && nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start:dev": "cross-env NODE_ENV=development start --watch",
+    "start:dev": "cross-env NODE_ENV=development nest start --watch",
     "start:staging": "cross-env NODE_ENV=staging node dist/main",
     "start:prod": "cross-env NODE_ENV=production node dist/main",
     "start:debug": "nest start --debug --watch",
@@ -36,6 +36,7 @@
     "dotenv": "^8.2.0",
     "express-rate-limit": "^5.2.3",
     "helmet": "^4.2.0",
+    "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
